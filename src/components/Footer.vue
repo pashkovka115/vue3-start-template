@@ -1,11 +1,23 @@
 <script setup>
 
+import Header from "@/components/Header.vue";
 </script>
 
 <template>
-  <div class="container">
-    <p>Footer</p>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="navbar-content">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="/">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style scoped lang="scss">

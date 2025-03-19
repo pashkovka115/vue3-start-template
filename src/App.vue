@@ -17,7 +17,23 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  components: {Footer, Header}
+  components: {Footer, Header},
+  data(){
+    return{
+      links: [
+        {
+          title:'Home',
+          alias: 'home',
+          url: '/'
+        },
+        {
+          title:'About',
+          alias: 'about',
+          url: '/about'
+        },
+      ]
+    }
+  }
 }
 </script>
 
