@@ -3,8 +3,7 @@
     <Header />
     <div class="wrapper-content">
       <div class="container">
-        <h1>Hello, Привет</h1>
-        <p>Hello, Привет</p>
+        <router-view/>
       </div>
     </div>
     <Footer />
