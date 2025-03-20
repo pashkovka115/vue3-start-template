@@ -1,13 +1,13 @@
 <template>
   <div class="wrapper">
-    <Header/>
+    <Header :links="links" :title="title" />
     <div class="wrapper-content">
       <div class="container">
         <h1>Hello, Привет</h1>
         <p>Hello, Привет</p>
       </div>
     </div>
-    <Footer/>
+    <Footer :links="links" />
   </div>
 </template>
 
@@ -20,6 +20,7 @@ export default {
   components: {Footer, Header},
   data(){
     return{
+      title: 'Template',
       links: [
         {
           title:'Home',
@@ -30,6 +31,11 @@ export default {
           title:'About',
           alias: 'about',
           url: '/about'
+        },
+        {
+          title:'Vacancy',
+          alias: 'vacancy',
+          url: '/vacancy'
         },
       ]
     }
