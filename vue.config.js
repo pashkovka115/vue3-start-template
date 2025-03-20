@@ -3,6 +3,9 @@ const webpack = require('webpack');
 
 module.exports = defineConfig({
   // transpileDependencies: true
+  publicPath: '/',
+  productionSourceMap: false,
+  assetsDir: 'assets',
   configureWebpack: {
     plugins: [
       new webpack.DefinePlugin({
