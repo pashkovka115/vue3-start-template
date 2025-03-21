@@ -18,7 +18,7 @@ import Header from "@/components/Header.vue";
 </template>
 
 <script>
-import {links} from "@/_config";
+import {links} from "@/config";
 
 export default {
   data() {
