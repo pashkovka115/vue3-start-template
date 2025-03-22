@@ -37,3 +37,6 @@ module.exports = defineConfig({
     ]);
   },
 };*/
+
+    // Я нашел способ обойти это, просто запустив npm i copyfiles -Dи добавив в buildскрипт этот фрагмент:
+    // && copyfiles -f ./deploy/*
