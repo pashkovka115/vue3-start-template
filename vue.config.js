@@ -1,5 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 const webpack = require('webpack');
+// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = defineConfig({
   // transpileDependencies: true
@@ -16,3 +17,23 @@ module.exports = defineConfig({
     ],
   },
 })
+
+/**
+ * @type {import('@vue/cli-service').ProjectOptions}
+ */
+/*module.exports = {
+  chainWebpack: (config) => {
+    // Disable HTML Generation.
+    config.plugins.delete("html");
+    config.plugins.delete("preload");
+    config.plugins.delete("prefetch");
+
+    // Copy all contents of the "static" src directory
+    // to the destination's root.
+    config.plugin("copy").use(CopyPlugin, [
+      {
+        patterns: [{ from: "./static", to: "./" }],
+      },
+    ]);
+  },
+};*/
