@@ -3,7 +3,7 @@ const webpack = require('webpack');
 // const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = defineConfig({
-  // transpileDependencies: true
+  transpileDependencies: true, // Учитывать ли зависимости из node_modules при build
   publicPath: '/',
   productionSourceMap: false,
   assetsDir: 'assets',
