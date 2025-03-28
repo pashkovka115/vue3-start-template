@@ -12,7 +12,8 @@ export const store = createStore({
     },
     actions:{
         setItem(context, payload){
-            context.commit('setItem', payload)
+            let item = context.getters.getItem
+            context.commit('setItem', payload + item)
         }
     },
     getters:{
